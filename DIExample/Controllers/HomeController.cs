@@ -11,9 +11,10 @@ namespace DIExample.Controllers
 
         //New Implementation
         private readonly ICitiesService _citiesService;
-        public HomeController()
+        public HomeController(ICitiesService citiesService)
         {
-            _citiesService = null;//new CitiesService();
+            // _citiesService = new CitiesService();
+            _citiesService = citiesService;
         }
         [Route("/")]
         public IActionResult Index()

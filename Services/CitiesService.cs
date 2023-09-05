@@ -12,7 +12,10 @@ namespace Services
             {
                 "London",
                 "Paris",
-                "Kolkata"
+                "Kolkata",
+                "Chicago",
+                "Mayami",
+                "California"
             };
         }
 
