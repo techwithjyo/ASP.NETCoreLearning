@@ -16,6 +16,8 @@ public class NewCitiesService : ICitiesService
         };
     }
 
+    public Guid ServiceInstanceId { get; }
+
     public List<string> GetCities()
     {
         return _cities;

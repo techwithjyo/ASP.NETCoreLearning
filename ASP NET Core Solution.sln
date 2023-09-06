@@ -19,6 +19,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Servic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceContracts", "ServiceContracts\ServiceContracts.csproj", "{E6A3CB05-1B7B-4637-BC29-4EF49B588863}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Weather App Dependency Injection Lab", "Weather App Dependency Injection Lab", "{035B646D-5ED7-4B90-944C-5B442840D49D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherApp", "WeatherApp\WeatherApp.csproj", "{145424F9-0FE5-431D-A10C-9B60C63EF2B4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,10 @@ Global
 		{E6A3CB05-1B7B-4637-BC29-4EF49B588863}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6A3CB05-1B7B-4637-BC29-4EF49B588863}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6A3CB05-1B7B-4637-BC29-4EF49B588863}.Release|Any CPU.Build.0 = Release|Any CPU
+		{145424F9-0FE5-431D-A10C-9B60C63EF2B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{145424F9-0FE5-431D-A10C-9B60C63EF2B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{145424F9-0FE5-431D-A10C-9B60C63EF2B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{145424F9-0FE5-431D-A10C-9B60C63EF2B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +63,7 @@ Global
 		{216E9AC8-EAFF-4926-8155-F44305D6D299} = {FD4C6FD6-7552-460E-81F6-6B62CDD02266}
 		{B72A311E-A958-4F69-8B6A-1A12032E9D8D} = {FD4C6FD6-7552-460E-81F6-6B62CDD02266}
 		{E6A3CB05-1B7B-4637-BC29-4EF49B588863} = {FD4C6FD6-7552-460E-81F6-6B62CDD02266}
+		{145424F9-0FE5-431D-A10C-9B60C63EF2B4} = {035B646D-5ED7-4B90-944C-5B442840D49D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CD961B3C-5A75-4403-866B-EA204C4CB339}

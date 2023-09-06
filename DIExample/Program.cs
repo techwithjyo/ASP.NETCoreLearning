@@ -7,7 +7,9 @@ builder.Services.AddControllersWithViews();
 builder.Services.Add(new ServiceDescriptor(
     typeof(ICitiesService),
     typeof(CitiesService),
-    ServiceLifetime.Transient));
+    ServiceLifetime.Scoped));
+// ShortHand Version
+// builder.Services.AddScoped<ICitiesService, CitiesService>();
 
 var app = builder.Build();
 
