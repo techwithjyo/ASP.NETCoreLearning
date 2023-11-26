@@ -6,15 +6,20 @@ namespace ConfigurationExample.Controllers;
 
 public class HomeController : Controller
 {
+    //private field
     private readonly ILogger<HomeController> _logger;
+    private readonly IConfiguration _configuration;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger, IConfiguration configuration)
     {
         _logger = logger;
+        _configuration = configuration;
     }
-
+    [Route("/")]
     public IActionResult Index()
     {
+        ViewBag.MyKey = _configuration["MyKey"];
+        ViewBag.MyKey1 = _configuration.GetValue("x", 000);
         return View();
     }
 
