@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Http;
+
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 // Add services to the container.
@@ -22,7 +24,8 @@ app.UseEndpoints(endpoints =>
     endpoints.Map("/", async context =>
     {
         await context.Response.WriteAsync(app.Configuration["MyKey"]+ "\n");
-        await context.Response.WriteAsync(app.Configuration.GetValue<string>(("MyKey")));
+        await context.Response.WriteAsync(app.Configuration.GetValue<string>("MyKey") + "\n");
+        await context.Response.WriteAsync(app.Configuration.GetValue<int>("x", 10) + "\n");
     });
 });
 app.UseAuthorization();
