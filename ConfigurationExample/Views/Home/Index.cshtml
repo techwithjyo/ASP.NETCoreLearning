@@ -3,18 +3,21 @@
 }
 
 <html>
-    <head>
-        <title>Configuration Demo</title>
-        <meta charset="UTF-8"/>
-    </head>
-    <body>
-        <div class="container">
-            <h1>Home</h1>
-            
-            <div class="box">
-                <div>@ViewBag.MyKey</div>
-                <div>@ViewBag.MyKey1</div>
-            </div>
-        </div>
-    </body>
+<head>
+    <title>Configuration Demo</title>
+    <meta charset="UTF-8"/>
+</head>
+<body>
+<div class="container">
+    <h1>Home</h1>
+
+    <div class="box">
+        @* <div>@ViewBag.MyKey</div> *@
+        @* <div>@ViewBag.MyKey1</div> *@
+        <div>@ViewBag.ClientId</div>
+        <div>@ViewBag.ClientSecret</div>
+    </div>
+</div>
+
+</body>
 </html>

@@ -1,9 +1,13 @@
+using ConfigurationExample;
 using Microsoft.AspNetCore.Http;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+//supply an object if WeatherApiOptions (with 'weatherapi' section) as a service
+builder.Services.Configure<WeatherApiOptions>(builder.Configuration.GetSection("weatherapi"));
 
 var app = builder.Build();
 
@@ -19,15 +23,15 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-app.UseEndpoints(endpoints =>
-{
-    endpoints.Map("/config", async context =>
-    {
-        await context.Response.WriteAsync(app.Configuration["MyKey"]+ "\n");
-        await context.Response.WriteAsync(app.Configuration.GetValue<string>("MyKey") + "\n");
-        await context.Response.WriteAsync(app.Configuration.GetValue<int>("x", 10) + "\n");
-    });
-});
+// app.UseEndpoints(endpoints =>
+// {
+//     endpoints.Map("/config", async context =>
+//     {
+//         await context.Response.WriteAsync(app.Configuration["MyKey"]+ "\n");
+//         await context.Response.WriteAsync(app.Configuration.GetValue<string>("MyKey") + "\n");
+//         await context.Response.WriteAsync(app.Configuration.GetValue<int>("x", 10) + "\n");
+//     });
+// });
 app.UseAuthorization();
 
 
