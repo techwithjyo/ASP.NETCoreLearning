@@ -17,15 +17,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basic App", "Basic App", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Services", "Services\Services.csproj", "{B72A311E-A958-4F69-8B6A-1A12032E9D8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceContracts", "ServiceContracts\ServiceContracts.csproj", "{E6A3CB05-1B7B-4637-BC29-4EF49B588863}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceContracts", "ServiceContracts\ServiceContracts.csproj", "{E6A3CB05-1B7B-4637-BC29-4EF49B588863}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Weather App Dependency Injection Lab", "Weather App Dependency Injection Lab", "{035B646D-5ED7-4B90-944C-5B442840D49D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherApp", "WeatherApp\WeatherApp.csproj", "{145424F9-0FE5-431D-A10C-9B60C63EF2B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherApp", "WeatherApp\WeatherApp.csproj", "{145424F9-0FE5-431D-A10C-9B60C63EF2B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurationExample", "ConfigurationExample\ConfigurationExample.csproj", "{E06CA1F7-F4FF-40FA-8AA7-2234716649EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigurationExample", "ConfigurationExample\ConfigurationExample.csproj", "{E06CA1F7-F4FF-40FA-8AA7-2234716649EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JWT Token Test", "JWT Token Test\JWT Token Test.csproj", "{090C8C7B-555A-4ADB-AB13-F5BA706A3265}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JWT Token Test", "JWT Token Test\JWT Token Test.csproj", "{090C8C7B-555A-4ADB-AB13-F5BA706A3265}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods", "ExtensionMethods\ExtensionMethods.csproj", "{46505C7D-CB91-4DB2-814A-51AFD0BB3788}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -65,6 +67,10 @@ Global
 		{090C8C7B-555A-4ADB-AB13-F5BA706A3265}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{090C8C7B-555A-4ADB-AB13-F5BA706A3265}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{090C8C7B-555A-4ADB-AB13-F5BA706A3265}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46505C7D-CB91-4DB2-814A-51AFD0BB3788}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46505C7D-CB91-4DB2-814A-51AFD0BB3788}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46505C7D-CB91-4DB2-814A-51AFD0BB3788}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46505C7D-CB91-4DB2-814A-51AFD0BB3788}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
